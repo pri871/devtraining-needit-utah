@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config/>
+        <description/>
+        <fields/>
+        <icon>circle-info-outline</icon>
+        <name>Record default Business process sidebar</name>
+        <optional_parameters/>
+        <order>-1</order>
+        <parent_macroponent display_value="Record">57c4eb371b858d10b81fdce7cc4bcb6d</parent_macroponent>
+        <parent_macroponent_composition_element_id>contextual_sidebar</parent_macroponent_composition_element_id>
+        <route_type>infrastructure-relationships</route_type>
+        <screen_type display_value="Business process sidebar collection">6a334f0c77b2301058119a372e5a995a</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:02:54</sys_created_on>
+        <sys_id>c6d423771b858d10b81fdce7cc4bcb4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record default Business process sidebar</sys_name>
+        <sys_package display_value="CMDB - Business Process" source="com.snc.cmdb_business_process">7e7f4fc01b140110a047ca641a4bcbdf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_app_route_c6d423771b858d10b81fdce7cc4bcb4a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:02:54</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=c6d423771b858d10b81fdce7cc4bcb4a"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>60f68590db8abd54199b17291396192a</instance_id>
+        <instance_name>dev189632</instance_name>
+        <name>sys_ux_app_route_c6d423771b858d10b81fdce7cc4bcb4a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config/>
+        <description/>
+        <fields/>
+        <icon>circle-info-outline</icon>
+        <name>Record default Business process sidebar</name>
+        <optional_parameters/>
+        <order>-1</order>
+        <parent_macroponent display_value="Record">57c4eb371b858d10b81fdce7cc4bcb6d</parent_macroponent>
+        <parent_macroponent_composition_element_id>contextual_sidebar</parent_macroponent_composition_element_id>
+        <route_type>infrastructure-relationships</route_type>
+        <screen_type display_value="Business process sidebar collection">6a334f0c77b2301058119a372e5a995a</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-21 21:02:54</sys_created_on>
+        <sys_id>c6d423771b858d10b81fdce7cc4bcb4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record default Business process sidebar</sys_name>
+        <sys_package display_value="CMDB - Business Process" source="com.snc.cmdb_business_process">7e7f4fc01b140110a047ca641a4bcbdf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_app_route_c6d423771b858d10b81fdce7cc4bcb4a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-21 21:02:54</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=c6d423771b858d10b81fdce7cc4bcb4a"/>
+</record_update>]]></payload>
+        <payload_hash>1790665577</payload_hash>
+        <record_name>Record default Business process sidebar</record_name>
+        <reverted_from/>
+        <source>787cc4d693ef31108a9cb5edfaba1075</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-07 08:37:08</sys_created_on>
+        <sys_id>f67c88d693ef31108a9cb5edfaba1077</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ce31191e50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-07 08:37:08</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>b67c88d6eeef3110fc056c83c6058a77</update_guid>
+        <update_guid_history>b67c88d6eeef3110fc056c83c6058a77:1790665577</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-07 18:53:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>193c0a5ed52247489432b2ec1e929910</sys_id>
+        <sys_metadata>c6d423771b858d10b81fdce7cc4bcb4a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record default Business process sidebar</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_c6d423771b858d10b81fdce7cc4bcb4a</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_c6d423771b858d10b81fdce7cc4bcb4a">f67c88d693ef31108a9cb5edfaba1077</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-07 18:53:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
