@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_composite">
+    <sys_ux_data_broker_composite action="INSERT_OR_UPDATE">
+        <api_name>x_58872_needit.Look Up Records</api_name>
+        <data_drivers>{&#13;
+  "recordsQuery": {&#13;
+    "definition" : {&#13;
+      "id" : "21f155c65310101024e5ddeeff7b1210",&#13;
+      "type" : "GRAPHQL"&#13;
+    },&#13;
+    "elementId" : "recordsQuery",&#13;
+    "inputValues" : {&#13;
+      "table" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "table"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "encodedQuery" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "encodedQuery"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "returnFields" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "returnFields"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "orderBy" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "orderBy"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "sortType" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "sortType"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "limit" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "limit"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "offset" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "offset"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "queryCategory" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "queryCategory"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "queryCategory" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "queryCategory"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "returnRowCount" : {&#13;
+        "type": "JSON_LITERAL",&#13;
+        "value": false&#13;
+      },&#13;
+     "returnTableMetadata" : {&#13;
+        "type": "JSON_LITERAL",&#13;
+        "value": false&#13;
+      },&#13;
+     "returnFieldMetadata" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "returnFieldMetadata"&#13;
+          ]&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    "elementLabel" : "Records Query"&#13;
+  },&#13;
+  "results": {&#13;
+    "definition" : {&#13;
+      "id" : "49595ad153131010c495ddeeff7b1225",&#13;
+      "type" : "SCRIPTLET"&#13;
+    },&#13;
+    "elementId" : "results",&#13;
+    "inputValues" : {&#13;
+      "query" : {&#13;
+        "type": "BROKER_INTERNAL_STATE_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "recordsQuery",&#13;
+            "output"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "first" : {&#13;
+        "type": "JSON_LITERAL",&#13;
+        "value": false&#13;
+      }&#13;
+    },&#13;
+    "elementLabel" : "Results"&#13;
+  }&#13;
+}</data_drivers>
+        <description>Return the records that meet the search criterion.</description>
+        <name>Look Up Records</name>
+        <operations/>
+        <output_properties>[&#13;
+{&#13;
+    "name": "results",&#13;
+    "label": "Results",&#13;
+    "description": "Results",&#13;
+    "origin": {&#13;
+       "type": "data",&#13;
+       "id": "results"&#13;
+    }&#13;
+  }&#13;
+]</output_properties>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+  "name": "table",&#13;
+  "label": "Table",&#13;
+  "description": "Table to look up",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "table_name",&#13;
+  "mandatory": true,&#13;
+  "defaultValue": ""&#13;
+},&#13;
+{&#13;
+  "name": "encodedQuery",&#13;
+  "label": "Conditions",&#13;
+  "description": "Look up search conditions",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "condition_string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": "",&#13;
+  "typeMetadata": {&#13;
+        "table": "@table"&#13;
+  }&#13;
+},&#13;
+{&#13;
+  "name": "returnFields",&#13;
+  "label": "Return fields",&#13;
+  "description": "Returned field values",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "field_list",&#13;
+  "mandatory": false,&#13;
+  "typeMetadata": {&#13;
+        "table": "@table",&#13;
+        "variant": "ordered"&#13;
+  }&#13;
+},&#13;
+{&#13;
+  "name": "orderBy",&#13;
+  "label": "Order by",&#13;
+  "description": "Field to sort rows by",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "field",&#13;
+  "mandatory": false,&#13;
+  "typeMetadata": {&#13;
+        "table": "@table"&#13;
+}&#13;
+},&#13;
+{&#13;
+  "name": "sortType",&#13;
+  "label": "Sort type (asc/desc)",&#13;
+  "description": "Sort type",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": "asc",&#13;
+  "typeMetadata": {&#13;
+        "choices": [{"label": "a to z", "value": "asc" },{"label": "z to a", "value": "desc" }]&#13;
+  }&#13;
+},&#13;
+{&#13;
+  "name": "limit",&#13;
+  "label": "Max results",&#13;
+  "description": "Maximum results returned.\nNOTE: The property has a default upper-cap of 1000. To modify the upper-cap, create/update the system-level property `glide.graphql.gliderecord.maxResults.limit` and set the desired upper-cap.",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+ "defaultValue": "1000"&#13;
+},&#13;
+{&#13;
+  "name": "offset",&#13;
+  "label": "Pagination offset",&#13;
+  "description": "Pagination offset",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false&#13;
+},&#13;
+  {&#13;
+  "name": "queryCategory",&#13;
+  "label": "Query category",&#13;
+  "description": "Read replica query category",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": ""&#13;
+},&#13;
+{&#13;
+  "name": "returnFieldMetadata",&#13;
+  "label": "Return field metadata",&#13;
+  "description": "Return field metadata",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "boolean",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": false&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Conditions",
+  "comment" : ""
+}, {
+  "message" : "Field to sort rows by",
+  "comment" : ""
+}, {
+  "message" : "Look up search conditions",
+  "comment" : ""
+}, {
+  "message" : "Max results",
+  "comment" : ""
+}, {
+  "message" : "Maximum results returned.\nNOTE: The property has a default upper-cap of 1000. To modify the upper-cap, create/update the system-level property `glide.graphql.gliderecord.maxResults.limit` and set the desired upper-cap.",
+  "comment" : ""
+}, {
+  "message" : "Order by",
+  "comment" : ""
+}, {
+  "message" : "Pagination offset",
+  "comment" : ""
+}, {
+  "message" : "Query category",
+  "comment" : ""
+}, {
+  "message" : "Read replica query category",
+  "comment" : ""
+}, {
+  "message" : "Return field metadata",
+  "comment" : ""
+}, {
+  "message" : "Return fields",
+  "comment" : ""
+}, {
+  "message" : "Returned field values",
+  "comment" : ""
+}, {
+  "message" : "Sort type",
+  "comment" : ""
+}, {
+  "message" : "Sort type (asc/desc)",
+  "comment" : ""
+}, {
+  "message" : "Table",
+  "comment" : ""
+}, {
+  "message" : "Table to look up",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_composite</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-06 20:36:25</sys_created_on>
+        <sys_id>8b90dd4c931c02108a9cb5edfaba1091</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Look Up Records</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_data_broker_composite_8b90dd4c931c02108a9cb5edfaba1091</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-06 20:36:25</sys_updated_on>
+    </sys_ux_data_broker_composite>
+    <sys_translated_text action="delete_multiple" query="documentkey=8b90dd4c931c02108a9cb5edfaba1091"/>
+</record_update>
